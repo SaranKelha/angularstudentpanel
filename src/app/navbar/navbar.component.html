@@ -1,0 +1,31 @@
+
+<div  id="sidebar" class="sidebar">
+    <div class="sidebar-header text-center mb-3 p-2 ">
+        <h2 class="d-flex align-items-center pt-1 ps-2"><i class="fas fa-circle-user me-2"></i>Student Panel</h2>
+    </div>
+ <!-- username -->
+    <div class="profile">
+       <p><i class="fas fa-user"></i>User Name</p>
+    </div>
+    <ul class="menu">
+        <li><a routerLink="/"><i class="fas fa-home"></i>Home</a></li>
+        <li><a routerLink="/viewedit"><i class="fas fa-user-edit"></i> View/Edit Profile</a></li>
+        <li><a routerLink="/viewtask"><i class="fas fa-tasks"></i>View Tasks</a></li>
+        <li><a href="#"><i class="fas fa-book"></i> View Results</a></li>
+        <li><a routerLink="/attendance"><i class="fas fa-book-open"></i> View Attendance</a></li>
+        <li><a href="#"><i class="fas fa-bell"></i>View Notifications</a></li> 
+        <li><a href="#"><i class="fas fa-comment"></i>Apply For Leave</a></li>
+        <li><a href="#"><i class="fas fa-comment"></i>Feedback</a></li>
+        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+</div>
+<div class="content"  id="content">
+    <!-- Top Navbar -->
+
+    <nav class="navbar">
+        <span class="menu-icon" (click)="toggleMenu()">&#9776;</span>
+    </nav>
+    <router-outlet> </router-outlet>
+  
+ </div> 
+

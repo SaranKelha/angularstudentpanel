@@ -1,0 +1,88 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    transition: transform 0.3s;
+    transform: translateX(-250px);
+    display: flex;
+   flex-direction: column;
+}
+.sidebar.visible {
+    transform: translateX(0);
+}
+.sidebar-header{
+   font-size: 20px; 
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar-header h2{
+    font-size: 25px;
+}
+
+.profile {
+    
+       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.profile p{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 3px 30px;
+   
+    font-size: 16px;
+   
+}
+.profile p i {
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1; /* Fills the remaining space */
+}
+.menu li {
+    padding: 10px 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 10px;  
+    border-radius: 5px;
+}
+
+.menu li a i {
+    margin-right: 10px;
+}
+
+.menu li a:hover {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.content {
+   transition: margin-left 0.3s;
+    margin-left: 0;
+}
+.content.shifted {
+    margin-left: 250px;
+}
